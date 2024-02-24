@@ -5,7 +5,7 @@ const ejs = require('ejs');
 const app = express();
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({ extended: true })); // support form-encoded bodies (for POST)
-
+   
 let newItems = [];
 app.get('/',(req,res)=>{
     let options = { weekday:'long', year:'numeric',month:'long',day:'numeric'};
